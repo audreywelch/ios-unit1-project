@@ -1,17 +1,15 @@
-//
-//  ViewController.swift
-//  Books List App
-//
-//  Created by Audrey Welch on 1/2/19.
-//  Copyright © 2019 Audrey Welch. All rights reserved.
-//
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SearchTableViewController: UITableViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBarOutlet: UISearchBar!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set the search bar's delegate to the table view controller
+        searchBarOutlet.delegate = self
         
         // Call the authorization function
         GoogleBooksAuthorizationClient.shared.authorizeIfNeeded(presenter: self) { (error) in
@@ -23,8 +21,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
     
     
 }
-
