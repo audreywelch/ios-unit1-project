@@ -1,10 +1,3 @@
-//
-//  GoogleBooksAuthorizationClient.swift
-//  BooksAuth
-//
-//  Created by Andrew R Madsen on 8/20/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
-//
 
 import Foundation
 import GTMAppAuth // Library created by Google for authenticating their APIs

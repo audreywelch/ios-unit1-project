@@ -23,7 +23,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="175" id="8hq-3G-NGc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="booksearchcell" rowHeight="175" id="8hq-3G-NGc" customClass="SearchBookTableViewCell" customModule="Books_List_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8hq-3G-NGc" id="7wB-Fo-GiX">
@@ -76,6 +76,11 @@
                                         <constraint firstAttribute="trailing" secondItem="egb-co-1YH" secondAttribute="trailing" constant="8" id="xBR-Mj-Xhm"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bookImage" destination="QqU-cD-luM" id="z5B-MG-nbZ"/>
+                                    <outlet property="reviewTextField" destination="QvI-qv-821" id="juM-UR-NeI"/>
+                                    <outlet property="titleLabel" destination="YVm-LG-HXm" id="JKz-pi-OB5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

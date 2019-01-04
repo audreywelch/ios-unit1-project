@@ -22,6 +22,7 @@
 		8425C4A021DD8BC300C3B0C6 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425C49F21DD8BC300C3B0C6 /* Book.swift */; };
 		8425C4A221DFCE3700C3B0C6 /* Bookshelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425C4A121DFCE3700C3B0C6 /* Bookshelf.swift */; };
 		8425C4A421DFEA3400C3B0C6 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425C4A321DFEA3400C3B0C6 /* SearchTableViewController.swift */; };
+		8425C4A621DFEC9D00C3B0C6 /* SearchBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425C4A521DFEC9D00C3B0C6 /* SearchBookTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		8425C49F21DD8BC300C3B0C6 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		8425C4A121DFCE3700C3B0C6 /* Bookshelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookshelf.swift; sourceTree = "<group>"; };
 		8425C4A321DFEA3400C3B0C6 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		8425C4A521DFEC9D00C3B0C6 /* SearchBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				8425C49F21DD8BC300C3B0C6 /* Book.swift */,
 				8425C49D21DD8B0000C3B0C6 /* BookModel.swift */,
 				8425C4A321DFEA3400C3B0C6 /* SearchTableViewController.swift */,
+				8425C4A521DFEC9D00C3B0C6 /* SearchBookTableViewCell.swift */,
 				8425C4A121DFCE3700C3B0C6 /* Bookshelf.swift */,
 				8425C49B21DD725400C3B0C6 /* GoogleBooksAuthorizationClient.swift */,
 				8425C47F21DD4C7700C3B0C6 /* Main.storyboard */,
@@ -192,6 +195,7 @@
 				8425C49E21DD8B0000C3B0C6 /* BookModel.swift in Sources */,
 				8425C4A221DFCE3700C3B0C6 /* Bookshelf.swift in Sources */,
 				8425C4A021DD8BC300C3B0C6 /* Book.swift in Sources */,
+				8425C4A621DFEC9D00C3B0C6 /* SearchBookTableViewCell.swift in Sources */,
 				8425C47C21DD4C7700C3B0C6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
