@@ -24,7 +24,7 @@ class BookModel {
         // Search query requires query items/components
         var components = URLComponents(url: volumesURL, resolvingAgainstBaseURL: true)
         
-        let searchQueryItem = URLQueryItem(name: "q", value: searchTerm)
+        let searchQueryItem = URLQueryItem(name: "q", value: searchTerm.lowercased())
         
         // Set up query item
         components?.queryItems = [searchQueryItem]
@@ -35,6 +35,7 @@ class BookModel {
             completion(NSError())
             return
         }
+        print(requestURL)
         
         // Make GET request
         var request = URLRequest(url: requestURL)
@@ -61,9 +62,11 @@ class BookModel {
             
             do {
                 // Variable for decoded results
-                let books = try jsonDecoder.decode(BookResults.VolumeInfo.self, from: data)
+                let books = try jsonDecoder.decode(BookResults.self, from: data)
+                    //let books = try jsonDecoder.decode(BookSearchResults.self, from: data)
                 // Set our internal array of books to be the decoded results
-                self.books = books.volumeInfo
+                self.books = books.items
+                print(books)
                 completion(nil)
                 return
             } catch {

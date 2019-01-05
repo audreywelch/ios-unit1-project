@@ -11,6 +11,14 @@ class SearchBookTableViewCell: UITableViewCell {
     
     @IBOutlet weak var bookImage: UIImageView!
     
+    @IBAction func addAction(_ sender: Any) {
+        
+        
+        
+    }
+    
+    
+    
     var book: Book? {
         didSet {
             updateViews()
@@ -24,12 +32,12 @@ class SearchBookTableViewCell: UITableViewCell {
         guard let book = book else { return }
         
         // Set the contents
-        titleLabel.text = book.title
+        titleLabel.text = book.volumeInfo.title
         
         // Get a url, try to load image data from that URL
-        guard let url = URL(string: book.imageLinks.smallThumbnail), let imageData = try? Data(contentsOf: url) else { return }
+        //guard let url = URL(string: book.volumeInfo.imageLinks.thumbnail), let imageData = try? Data(contentsOf: url) else { return }
         
-        bookImage.image = UIImage(data: imageData)
+        //bookImage.image = UIImage(data: imageData)
     }
     
     
