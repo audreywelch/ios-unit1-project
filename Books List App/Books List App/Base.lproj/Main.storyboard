@@ -108,14 +108,59 @@
                     <view key="view" contentMode="scaleToFill" id="pfs-je-YG2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="De6-ZG-KTz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="qRf-or-mNF">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qRf-or-mNF" id="zvY-IA-NKa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTv-pz-xQF">
+                                                    <rect key="frame" x="23" y="46.5" width="237" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSj-TG-RgY">
+                                                    <rect key="frame" x="268" y="15" width="84" height="84"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="fSj-TG-RgY" secondAttribute="height" id="Izb-Jc-mq9"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="plus"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fSj-TG-RgY" firstAttribute="centerY" secondItem="zvY-IA-NKa" secondAttribute="centerY" id="2HF-eK-rIT"/>
+                                                <constraint firstItem="fSj-TG-RgY" firstAttribute="leading" secondItem="gTv-pz-xQF" secondAttribute="trailing" constant="8" id="EVm-ER-cdn"/>
+                                                <constraint firstItem="gTv-pz-xQF" firstAttribute="leading" secondItem="zvY-IA-NKa" secondAttribute="leadingMargin" constant="8" id="HtZ-NG-Lkx"/>
+                                                <constraint firstItem="gTv-pz-xQF" firstAttribute="centerY" secondItem="zvY-IA-NKa" secondAttribute="centerY" id="Ukd-2z-FdI"/>
+                                                <constraint firstItem="fSj-TG-RgY" firstAttribute="leading" secondItem="gTv-pz-xQF" secondAttribute="trailing" constant="8" id="ef4-GN-ATb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fSj-TG-RgY" secondAttribute="trailing" constant="8" id="kfm-8O-bkb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="De6-ZG-KTz" firstAttribute="top" secondItem="WUy-aJ-7o0" secondAttribute="top" id="3KB-ir-BQ2"/>
+                            <constraint firstItem="WUy-aJ-7o0" firstAttribute="trailing" secondItem="De6-ZG-KTz" secondAttribute="trailing" id="IRU-gz-AcW"/>
+                            <constraint firstItem="De6-ZG-KTz" firstAttribute="leading" secondItem="WUy-aJ-7o0" secondAttribute="leading" id="PAQ-U7-54V"/>
+                            <constraint firstItem="WUy-aJ-7o0" firstAttribute="bottom" secondItem="De6-ZG-KTz" secondAttribute="bottom" id="pg1-wp-8mm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WUy-aJ-7o0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add to Bookshelf" id="hFI-bc-EJC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBV-Hx-rSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5145" y="851"/>
+            <point key="canvasLocation" x="5144.8000000000002" y="850.52473763118451"/>
         </scene>
         <!--My Bookshelves-->
         <scene sceneID="ZTQ-bn-bk6">
@@ -192,6 +237,7 @@
     </scenes>
     <resources>
         <image name="book" width="30" height="30"/>
+        <image name="plus" width="30" height="30"/>
         <image name="search" width="30" height="30"/>
     </resources>
 </document>
