@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S43-7m-vjv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oUl-DK-PBW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -62,7 +62,7 @@
                                                     <state key="normal" title="Add"/>
                                                     <connections>
                                                         <action selector="addAction:" destination="8hq-3G-NGc" eventType="touchUpInside" id="Dld-VQ-C4j"/>
-                                                        <segue destination="G7n-6H-IgX" kind="show" id="Ymh-0p-acb"/>
+                                                        <segue destination="xpm-oK-Hwo" kind="show" id="pF1-2O-D1j"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -92,63 +92,47 @@
                             <outlet property="delegate" destination="kzi-h0-iPK" id="jmD-21-FRh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Book Search" id="Tug-we-Iha"/>
+                    <navigationItem key="navigationItem" title="Book Search" id="bNT-ew-58i"/>
                     <connections>
                         <outlet property="searchBarOutlet" destination="nRT-ns-2QB" id="F0O-Y8-J0f"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W48-OU-Esg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648.79999999999995" y="148.87556221889056"/>
+            <point key="canvasLocation" x="4431.1999999999998" y="852.3238380809596"/>
         </scene>
         <!--Add to Bookshelf-->
-        <scene sceneID="CPT-Uc-Fpm">
+        <scene sceneID="mXv-Qa-Ru3">
             <objects>
-                <viewController id="G7n-6H-IgX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="r2U-D4-X6m">
+                <viewController id="xpm-oK-Hwo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pfs-je-YG2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="l6c-9h-06P"/>
+                        <viewLayoutGuide key="safeArea" id="WUy-aJ-7o0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add to Bookshelf" id="0fD-m0-eA6"/>
+                    <navigationItem key="navigationItem" title="Add to Bookshelf" id="hFI-bc-EJC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7e2-x4-J83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBV-Hx-rSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="149"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WPl-1m-AIi">
-            <objects>
-                <navigationController id="S43-7m-vjv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="D9X-rV-vGW">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="kzi-h0-iPK" kind="relationship" relationship="rootViewController" id="jxh-gd-zAH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0He-UX-dbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-66" y="149"/>
+            <point key="canvasLocation" x="5145" y="851"/>
         </scene>
         <!--My Bookshelves-->
-        <scene sceneID="Jb4-gv-2nk">
+        <scene sceneID="ZTQ-bn-bk6">
             <objects>
-                <collectionViewController id="I5l-1C-Re9" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2wX-AA-dUn">
+                <collectionViewController id="q9M-ta-XIO" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="b1w-Zo-0zY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7If-N9-g2Q">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dai-4A-2la">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="n4G-68-agL">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ob0-XH-w5E">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -158,62 +142,52 @@
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="I5l-1C-Re9" id="AwV-GK-gtl"/>
-                            <outlet property="delegate" destination="I5l-1C-Re9" id="1Oy-iu-z0e"/>
+                            <outlet property="dataSource" destination="q9M-ta-XIO" id="2M7-2Y-l9k"/>
+                            <outlet property="delegate" destination="q9M-ta-XIO" id="sG8-ht-li6"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="My Bookshelves" image="book" id="MR9-hH-gKQ"/>
+                    <tabBarItem key="tabBarItem" title="My Bookshelves" image="book" id="8Ot-3I-z4b"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lA6-kv-k6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYN-vk-fgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="842.42878560719646"/>
-        </scene>
-        <!--Search-->
-        <scene sceneID="8oa-D9-KkT">
-            <objects>
-                <tableViewController id="9kX-Sj-YbG" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GWL-nC-Hhq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1a8-Wb-70r">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1a8-Wb-70r" id="bro-5E-t2N">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="9kX-Sj-YbG" id="BZG-e8-pfQ"/>
-                            <outlet property="delegate" destination="9kX-Sj-YbG" id="QGR-9j-go3"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Search" image="search" id="Ow4-6N-93J"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JdL-t1-WdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2328.8000000000002" y="842.42878560719646"/>
+            <point key="canvasLocation" x="2794.4000000000001" y="853.22338830584715"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="xZe-PP-mTL">
+        <scene sceneID="gDg-br-Dqg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sew-bK-kin" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oUl-DK-PBW" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="joz-36-AuA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="841-XR-fkb">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="I5l-1C-Re9" kind="relationship" relationship="viewControllers" id="zvo-bA-8v3"/>
-                        <segue destination="9kX-Sj-YbG" kind="relationship" relationship="viewControllers" id="aSt-Ah-s94"/>
+                        <segue destination="S7o-Vg-Fun" kind="relationship" relationship="viewControllers" id="h6j-6g-ool"/>
+                        <segue destination="q9M-ta-XIO" kind="relationship" relationship="viewControllers" id="wBK-k6-xqG"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xoo-2U-5Pu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxI-GL-lZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648.79999999999995" y="842.42878560719646"/>
+            <point key="canvasLocation" x="2076" y="852"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="gT6-16-6tE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S7o-Vg-Fun" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="fmA-hB-kdb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Uu-ZG-eKj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kzi-h0-iPK" kind="relationship" relationship="rootViewController" id="m0z-5V-vNM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1o-n2-ExP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3694" y="852"/>
         </scene>
     </scenes>
     <resources>
