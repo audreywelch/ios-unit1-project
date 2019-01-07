@@ -5,11 +5,34 @@ import Foundation
 
 class BookModel {
     
+    // Array to hold the search results
     private(set) var books: [Book] = []
+    
+    // Array to hold the saved books
+    var savedBooks: [Book] = []
     
     // Singleton
     static let shared = BookModel()
     private init () {}
+    
+    // Model Methods
+    
+    var savedBooksCount: Int {
+        return savedBooks.count
+    }
+    
+    func add(book: Book) {
+        savedBooks.append(book)
+    }
+    
+    func remove(at indexPath: IndexPath) {
+        savedBooks.remove(at: indexPath.row)
+    }
+    
+    func findBook(at indexPath: IndexPath) -> Book {
+        return savedBooks[indexPath.row]
+    }
+    
     
     let baseURL = URL(string: "https://www.googleapis.com/books/v1")!
     

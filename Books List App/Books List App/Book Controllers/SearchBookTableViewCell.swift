@@ -7,17 +7,11 @@ class SearchBookTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    @IBOutlet weak var reviewTextField: UITextField!
-    
     @IBOutlet weak var bookImage: UIImageView!
     
     @IBAction func addAction(_ sender: Any) {
         
-        
-        
     }
-    
-    
     
     var book: Book? {
         didSet {
